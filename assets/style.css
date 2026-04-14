@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #0d0d0d;
+    color: #f0ece4;
+}
+.stApp { background-color: #0d0d0d; }
+
+.hero-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    color: #f0ece4;
+    letter-spacing: -1px;
+}
+.hero-title span { color: #e8c547; }
+.hero-sub { color: #666; font-size: 1rem; margin-top: 0.4rem; font-weight: 300; }
+
+.section-label {
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #e8c547;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+}
+
+.result-card {
+    background: #141414;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.result-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.05rem;
+    color: #f0ece4;
+    margin-bottom: 3px;
+}
+.result-meta { font-size: 0.78rem; color: #666; display: flex; gap: 0.8rem; flex-wrap: wrap; }
+.genre-pill {
+    background: #1f1f1f;
+    border-radius: 20px;
+    padding: 1px 9px;
+    font-size: 0.7rem;
+    color: #999;
+    display: inline-block;
+    margin: 2px 2px 0 0;
+}
+.star { color: #e8c547; }
+
+.detail-hero {
+    background: linear-gradient(135deg, #1a1400 0%, #141414 60%);
+    border: 1px solid #2a2200;
+    border-radius: 14px;
+    padding: 2rem 2.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+.detail-hero::before {
+    content: '';
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, #e8c54718 0%, transparent 70%);
+    border-radius: 50%;
+}
+.detail-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.4rem;
+    line-height: 1.15;
+    color: #f0ece4;
+    margin-bottom: 0.5rem;
+}
+.detail-year { font-size: 0.85rem; color: #666; letter-spacing: 2px; text-transform: uppercase; }
+.big-rating { font-family: 'DM Serif Display', serif; font-size: 3rem; color: #e8c547; line-height: 1; }
+.rating-label { font-size: 0.7rem; color: #555; text-transform: uppercase; letter-spacing: 2px; }
+
+.rating-bar-bg {
+    background: #1f1f1f;
+    border-radius: 4px;
+    height: 5px;
+    width: 100%;
+    margin-top: 6px;
+}
+.rating-bar-fill {
+    background: linear-gradient(90deg, #e8c547, #f0a500);
+    border-radius: 4px;
+    height: 5px;
+}
+
+.sim-card {
+    background: #141414;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.stTextInput > div > div > input {
+    background: #141414 !important;
+    border: 1px solid #222 !important;
+    color: #f0ece4 !important;
+    border-radius: 8px !important;
+    font-size: 1rem !important;
+}
+.stTextInput > div > div > input:focus {
+    border-color: #e8c547 !important;
+    box-shadow: 0 0 0 2px #e8c54720 !important;
+}
+.stSelectbox > div > div {
+    background: #141414 !important;
+    border: 1px solid #222 !important;
+    color: #f0ece4 !important;
+    border-radius: 8px !important;
+}
+
+.stButton > button {
+    background: #e8c547 !important;
+    color: #0d0d0d !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-weight: 500 !important;
+    font-family: 'DM Sans', sans-serif !important;
+}
+.stButton > button:hover { opacity: 0.85 !important; }
+
+.divider { border-top: 1px solid #1a1a1a; margin: 1.2rem 0; }
+
+.stat-box {
+    background: #141414;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    text-align: center;
+}
+.stat-num { font-family: 'DM Serif Display', serif; font-size: 1.6rem; color: #e8c547; }
+.stat-label { font-size: 0.7rem; color: #555; letter-spacing: 2px; text-transform: uppercase; }
+
+.empty-state { text-align: center; padding: 3rem 1rem; color: #333; }
+.empty-state .icon { font-size: 2.5rem; margin-bottom: 0.5rem; }
+
+.stTabs [data-baseweb="tab-list"] {
+    background: #111;
+    border-radius: 10px;
+    padding: 4px;
+    gap: 4px;
+    border-bottom: none !important;
+}
+.stTabs [data-baseweb="tab"] {
+    background: transparent;
+    color: #666;
+    border-radius: 7px;
+    font-family: 'DM Sans', sans-serif;
+    border: none !important;
+}
+.stTabs [aria-selected="true"] {
+    background: #e8c547 !important;
+    color: #0d0d0d !important;
+    font-weight: 500 !important;
+}
+.stTabs [data-baseweb="tab-panel"] { padding-top: 1.5rem; }
